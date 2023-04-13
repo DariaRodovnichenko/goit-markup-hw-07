@@ -19,6 +19,21 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width: 767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width: 1158px)"
+    />
   </head>
   <body>
     <!--Header-->
@@ -42,6 +57,13 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg class="menu-btn-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+
+        <!--Contacts-->
         <address class="address">
           <ul class="contacts list">
             <li class="contacts-item">
@@ -57,12 +79,91 @@
           </ul>
         </address>
       </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close-icon"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu-list-wrapper">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contacts-wrapper">
+            <address class="mobile-menu-address">
+              <ul class="mobile-contacts list">
+                <li class="mobile-contacts-item">
+                  <a
+                    class="mobile-contacts-link tel link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-contacts-item">
+                  <a
+                    class="mobile-contacts-link email link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link link">
+                <svg class="mobile-social-list-icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link link">
+                <svg class="mobile-social-list-icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-twit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link link">
+                <svg class="mobile-social-list-icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link link">
+                <svg class="mobile-social-list-icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!--Main Page-->
     <main>
       <section class="portfolio">
-        <h1 class="visualy-hidden">Portfolio</h1>
+        <h1 class="visually-hidden">Portfolio</h1>
         <div class="portfolio-container container">
           <ul class="portfolio-list list">
             <li class="portfolio-list-item">
@@ -87,7 +188,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card1-1.jpg"
+                    src="./images-projects/card1.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
                     height="300"
@@ -108,7 +209,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card1-2.jpg"
+                    src="./images-projects/card2.jpg"
                     alt="Cashless Payment"
                     width="360"
                     height="300"
@@ -129,7 +230,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card1-3.jpg"
+                    src="./images-projects/card3.jpg"
                     alt="Meditation App"
                     width="360"
                     height="300"
@@ -150,7 +251,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card2-1.jpg"
+                    src="./images-projects/card4.jpg"
                     alt="Taxi Service"
                     width="360"
                     height="300"
@@ -171,7 +272,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card2-2.jpg"
+                    src="./images-projects/card5.jpg"
                     alt="Screen Illustrations"
                     width="360"
                     height="300"
@@ -192,7 +293,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card2-3.jpg"
+                    src="./images-projects/card6.jpg"
                     alt="Online Courses"
                     width="360"
                     height="300"
@@ -213,7 +314,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card3-1.jpg"
+                    src="./images-projects/card7.jpg"
                     alt="Instagram Stories Concept"
                     width="360"
                     height="300"
@@ -234,7 +335,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card3-2.jpg"
+                    src="./images-projects/card8.jpg"
                     alt="Organic Food"
                     width="360"
                     height="300"
@@ -255,7 +356,7 @@
               <a class="card-link link" href="">
                 <div class="card-cover">
                   <img
-                    src="./images-projects/card3-3.jpg"
+                    src="./images-projects/card9.jpg"
                     alt="Fresh Coffee"
                     width="360"
                     height="300"
@@ -276,6 +377,7 @@
         </div>
       </section>
     </main>
+
     <!--Footer-->
     <footer class="footer">
       <div class="footer-container container">
@@ -342,6 +444,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

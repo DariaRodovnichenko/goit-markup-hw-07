@@ -1,0 +1,145 @@
+.container {
+  width: 1158px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  gap: var(--flex-main-gap);
+  transition: 250ms var(--timing-fn);
+}
+
+.contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: var(--line-height);
+  letter-spacing: var(--general-letter-spacing);
+  color: var(--primary-text-color);
+}
+
+.hero {
+  max-width: 1440px;
+  height: 600px;
+  padding: 188px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/desktop/hero-desktop.jpg");
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/desktop/hero-desktop-2x.jpg");
+  }
+}
+
+.hero-title {
+  margin: 0 auto 48px;
+}
+
+.advantages {
+  padding: 120px 0;
+}
+
+.adv-list {
+  display: flex;
+  gap: var(--flex-list-gap);
+}
+
+.adv-list-item {
+  width: 264px;
+}
+
+.adv-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: var(--general-letter-spacing);
+  color: var(--title-text-color);
+  width: 264px;
+  margin-top: 8px;
+}
+
+.adv-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: var(--line-height);
+  letter-spacing: var(--general-letter-spacing);
+  margin-top: 8px;
+}
+
+.adv-icon {
+  display: flex;
+  justify-content: center;
+  align-items: var(--general-align-items);
+  width: 100%;
+  height: 112px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+}
+
+.our-works {
+  padding-bottom: 120px;
+}
+
+.our-works-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--flex-list-gap);
+}
+
+.team {
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--flex-list-gap);
+}
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-list {
+  width: 100%;
+  gap: var(--flex-list-gap);
+}
+
+.footer {
+  padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.footer-info {
+  min-width: 264px;
+  margin-left: 0;
+}
+
+.footer-social-media {
+  margin-left: 120px;
+}
+
+.footer-subscription {
+  justify-content: normal;
+  width: 453px;
+  margin-left: 80px;
+}
