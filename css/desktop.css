@@ -33,7 +33,7 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-section {
+  .hero {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
