@@ -97,7 +97,7 @@ ul {
 }
 
 @media screen and (max-width: 1157px) {
-  .adv-icon {
+  .advantages-icon {
     display: none;
   }
   .our-works {
@@ -250,8 +250,8 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 408px;
-  max-height: 610px;
+  width: 392px;
+  min-height: 586px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -386,27 +386,30 @@ ul {
 .label-checkbox {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #757575;
-  height: 16px;
   margin-bottom: 24px;
- }
+  cursor: pointer;
+}
 
-.label-checkbox span {
+.check-icon {
+  display: block;
+  content: "";
   width: 16px;
   height: 16px;
-  cursor: pointer;
-  border: 1px solid #2e2f42;
+  padding: 4px 3px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
   fill: transparent;
+  background-color: transparent;
+  transition: background-color 250ms var(--timing-fn),
+    border 250ms var(--timing-fn), fill 250ms var(--timing-fn);
 }
 
 .form-checkbox:checked + .label-checkbox span {
@@ -420,7 +423,7 @@ ul {
 }
 
 .contract-terms {
-  color: var(--title-text-color);
+  color: var(--primary-brand);
 }
 
 .contract-terms:hover,

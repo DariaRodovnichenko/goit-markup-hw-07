@@ -125,7 +125,7 @@
 
 .tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.11;
   letter-spacing: var(--general-letter-spacing);
   color: var(--primary-text-color);
@@ -205,15 +205,15 @@
   padding: 96px 0;
 }
 
-.adv-container {
+.advantages-container {
   max-width: 428px;
 }
 
-.adv-list-item:not(:last-child) {
+.advantages-list-item:not(:last-child) {
   margin-bottom: 72px;
 }
 
-.adv-list-title {
+.advantages-list-title {
   color: var(--primary-color);
   font-weight: 700;
   font-size: 36px;
@@ -223,7 +223,7 @@
   text-transform: capitalize;
 }
 
-.adv-list-text {
+.advantages-list-text {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -512,8 +512,7 @@
 .modal {
   width: 95%;
   max-width: 392px;
-  height: 100%;
-
+  height: 90%;
   overflow: scroll;
 }
 

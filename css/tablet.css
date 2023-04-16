@@ -115,7 +115,6 @@
 }
 
 .hero {
-  
   height: 436px;
   padding: 112px 0;
   margin-right: auto;
@@ -185,22 +184,22 @@
   padding: 96px 0;
 }
 
-.adv-container {
+.advantages-container {
   width: 100%;
 }
 
-.adv-list {
+.advantages-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 24px;
   justify-content: center;
 }
 
-.adv-list-item {
+.advantages-list-item {
   width: 356px;
 }
 
-.adv-list-title {
+.advantages-list-title {
   color: var(--primary-color);
   font-weight: 700;
   font-size: 36px;
@@ -209,7 +208,7 @@
   text-transform: capitalize;
 }
 
-.adv-list-text {
+.advantages-list-text {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -491,6 +490,10 @@
 .subscribe-icon {
   fill: var(--white-color);
   transition: fill 250ms var(--timing-fn);
+}
+
+.modal {
+  width: 408px;
 }
 
 .portfolio {
